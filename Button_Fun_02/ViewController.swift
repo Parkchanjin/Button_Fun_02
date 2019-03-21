@@ -23,7 +23,13 @@ class ViewController: UIViewController {
     @IBAction func buttonPressed(_ sender: Any) {
         count = count + 1
         myLabel.text = "아이폰 계십니다."
-         counterLabel.text = String(count)
+        
+        if (count == 10) {
+            count = 0;
+        }
+        
+        counterLabel.text = String(count)
+        
     }
     
     @IBAction func buttonPressed2(_ sender: Any) {
